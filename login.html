@@ -1,15 +1,23 @@
-<html>  
-   <body>  
-      <form action = "http://localhost:5000/login" method = "post">  
-         <table>  
-        <tr><td>Student Name</td>  
-        <td><input type ="text" name ="sn"></td></tr>  
-        <tr><td>Student class</td>  
-        <td><input type ="text" name ="sc"></td></tr> 
-        <tr><td>Student division</td>  
-        <td><input type ="text" name ="sd"></td></tr> 
-        <tr><td><input type = "submit"></td></tr>  
-    </table>  
-      </form>  
-   </body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Login</title>
+
+       <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+       <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <link rel="stylesheet" href="/static/custom-styles.css">
+
+   </head>
+    <body>
+        <div class="col-md-6 offset-md-4">
+            <a href={{ url_for('register') }} class="btn btn-link">
+                Generate school data
+            </a>
+
+        </div>
+    </body>
+</html>
